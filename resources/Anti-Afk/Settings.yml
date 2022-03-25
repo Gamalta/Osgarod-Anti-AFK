@@ -1,0 +1,39 @@
+Delay:
+  Refresh: 45                       #This is the number of seconds between each check
+  Kick: 30                          #This is the number of seconds between AFK alert and kick player
+  Afk: 1                            #This is the number of minutes a player has to be afk to get kick
+
+Radius: 7.00                        #This is the number of blocks that a player need to move without being considered as an afk player
+
+Kick:
+  Message: "Vous avez été kick  pour inactivité"
+  ActionBar:
+    Singular: "%player% à été kick pour inactivité"
+    Plural: "%players% ont été kick pour inactivité"
+
+
+Alert:
+  Title:  
+    Title: "&cAFK"
+    SubTitle: "&c/noafk &7pour ne pas &6être &cdéconnecté &4&l!"
+    FadeIn: 30
+    Stay: 100
+    FadeOut: 60
+  Sound: 
+    Type: ENTITY_LLAMA_ANGRY
+    Volume: 100
+    Pitch: 100
+  Message:
+    Text: "tapez %noafk% pour ne pas être deco"
+    Variants:
+      '%noafk%':
+        Text: "/noafk"
+        Action: RUN_COMMAND
+        Result: "/noafk"
+        Hover: "/noAFK"
+    
+
+RemoveAFK: "Vous n'ête plus compté comme AFK"
+NoAFK: "couillon tu n'étais pas AFK '-' !"
+
+BypassPermission: "osgarod.bypass.afk"

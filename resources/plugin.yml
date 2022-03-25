@@ -1,0 +1,8 @@
+name: NoAfk
+main: fr.gamalta.osgarod.noafk.NoAFK
+version: 1.0
+author: Gamalta
+api-version: 1.14
+depend: [OsgarodCore]
+commands:
+  noafk:
